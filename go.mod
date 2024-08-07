@@ -3,6 +3,7 @@ module github.com/asamuj/api-demo
 go 1.22.4
 
 require (
+	github.com/davecgh/go-spew v1.1.1
 	github.com/gin-gonic/gin v1.8.1
 	github.com/go-playground/validator/v10 v10.11.0
 	github.com/pkg/errors v0.9.1

@@ -1,8 +1,11 @@
 services:
   api-demo:
+    container_name: "api-demo"
     build: .
     ports:
-      - "8000:8080"
-    command: ["-config-file","config/config.yaml"]
+      - "8080:8080"
+    command: [ "-config-file", "/config/config.yaml" ]
     volumes:
-      - ./config/config_test.yaml:/config/config.yaml
+      - ./config/config_docker.yaml:/config/config.yaml
+    networks:
+      - my-network
