@@ -1,4 +1,4 @@
-port: 8080
+port: 18080
 mysql:
   "master":
     "host": "127.0.0.1"

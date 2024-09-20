@@ -55,7 +55,7 @@ func exec(ctx *cli.Context) error {
 		}).Fatalln("initialize mysql db error")
 	}
 
-	log.Info("Starting explorer api server...")
+	log.Info("Starting api server...")
 
 	server.New(
 		cfg.Port,

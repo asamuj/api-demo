@@ -54,6 +54,7 @@ func (s *Server) registerRouter(service *service.Service) {
 
 // Run the server
 func (s *Server) Run() {
+	fmt.Println(s.port)
 	if err := s.engine.Run(fmt.Sprintf(":%d", s.port)); err != nil {
 		log.WithFields(log.Fields{
 			"error": err,
